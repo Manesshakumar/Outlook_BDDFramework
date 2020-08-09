@@ -39,8 +39,7 @@ public class CalendarPage {
       		locationList.get(i).click();
       		break;
       	}
-      }
-	  
+      }	  
 	  savebtn.click();
 	}
   
