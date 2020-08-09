@@ -10,10 +10,10 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = "C:/Users/user/Desktop/Training/OutlookAutomationTesting/src/main/java/Features", 
 		glue={"stepDefinition"}, 
-		dryRun = true, 
+		dryRun = false, 
 		monochrome = true ,
 		strict = true,
-		plugin = {"pretty" ,"html:test_output/cucumber-html-report", "json:target/cucumber-json-report.json" }
+		plugin = {"pretty","html:test_output/cucumber-html-report", "json:target/cucumber-json-report.json" }
 		)
 					
 public class TestRunner {

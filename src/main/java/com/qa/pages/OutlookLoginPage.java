@@ -32,7 +32,7 @@ public class OutlookLoginPage  {
 		emailId.sendKeys(email);
 		nextbtn.click();
 		pwd.sendKeys(passwd);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		SignInBtn.click();
     	return new HomePage();
     }

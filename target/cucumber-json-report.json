@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is Logged In",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14586064200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigate to the login page",
+            "match": {
+              "location": "stepDefinition.Outlook_StepDefinition.user_navigate_to_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40650230700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User submit emailId and password",
+            "match": {
+              "location": "stepDefinition.Outlook_StepDefinition.User_submit_emailId_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26018500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be logged in",
+            "match": {
+              "location": "stepDefinition.Outlook_StepDefinition.user_should_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T08:21:00.198Z",
+        "line": 9,
+        "name": "Create an Event in outlook Calendar",
+        "description": "",
+        "id": "outlook-automation-feature;create-an-event-in-outlook-calendar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8964546700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The User click Calendar button",
+            "match": {
+              "location": "stepDefinition.Outlook_StepDefinition.click_calendar_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class \u003d \u0027ms-TextField-fieldGroup fieldGroup-163\u0027]//input[@class \u003d \u0027ms-TextField-field field-164\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.105)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ADMIN\u0027, ip: \u0027192.168.225.28\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\user\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 4cd2fd4f31f3bea54871bc9416a48f40\n*** Element info: {Using\u003dxpath, value\u003d//div[@class \u003d \u0027ms-TextField-fieldGroup fieldGroup-163\u0027]//input[@class \u003d \u0027ms-TextField-field field-164\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.sendKeys(Unknown Source)\r\n\tat com.qa.pages.CalendarPage.create_an_event(CalendarPage.java:30)\r\n\tat stepDefinition.Outlook_StepDefinition.user_creates_an_event(Outlook_StepDefinition.java:50)\r\n\tat ✽.User Creates an Event(file:///C:/Users/user/Desktop/Training/OutlookAutomationTesting/src/main/java/Features/oulookautomation.feature:11)\r\n",
+              "duration": 50077645600,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User Creates an Event",
+            "match": {
+              "location": "stepDefinition.Outlook_StepDefinition.user_creates_an_event()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Outlook Automation Feature",
+    "description": "\tDescription: The purpose of this feature is to test the Below Scenarios",
+    "id": "outlook-automation-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/Features/oulookautomation.feature",
+    "tags": []
+  }
+]
