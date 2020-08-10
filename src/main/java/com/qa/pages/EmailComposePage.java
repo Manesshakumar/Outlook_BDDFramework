@@ -24,12 +24,13 @@ public class EmailComposePage {
 		PageFactory.initElements(TestBase.driver, this);
 	}
 	
-	 public void compose_a_mail() {
+	 public void compose_a_mail() throws InterruptedException {
 		 toBtn.sendKeys(TestBase.prop.getProperty("email"));
 		 addSubject.sendKeys("Automation Test");
 		 StringBuffer textArea = new StringBuffer().append("This is my First Message");
 		 msgBody.sendKeys(textArea);	
 		 sendbtn.click();
+		 Thread.sleep(1000);
 }
 	 
 }

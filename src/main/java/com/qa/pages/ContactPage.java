@@ -17,7 +17,7 @@ public class ContactPage {
 	@FindBy(xpath = "//input[@id = 'Surname']")
 	WebElement surname;
 	
-	@FindBy(xpath = "//button[@class = 'ms-Button ms-Button--primary button-262']")
+	@FindBy(xpath = "//div[@class = 'rightFooter-350']//button[@data-log-name = 'ContactEditorSave']")
 	WebElement create;
 	
 	public ContactPage() {
@@ -27,5 +27,6 @@ public class ContactPage {
 	public void createContact(List<Map<String, String>> data) {
 		firstName.sendKeys(data.get(0).get("FirstName"));
 		surname.sendKeys(data.get(0).get("LastName"));
+		create.click();
 	}
 }

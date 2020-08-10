@@ -16,7 +16,7 @@ public class CalendarPage {
 	@FindBy(xpath = "//input[@class='ms-BasePicker-input pickerInput_34694d2a']")
 	WebElement searchLocation;
 
-	@FindBy(xpath = "//div[@class = '_2DNm9KOx-R4ttz1hIit5QL']//button[@class = 'ms-Button ms-Button--action ms-Button--command _17L9p5JiFh3SCKtydh4NGU root-214']")
+	@FindBy(xpath = "//button[@class = 'ms-Button ms-Button--action ms-Button--command _17L9p5JiFh3SCKtydh4NGU root-214']")
 	WebElement savebtn;
 	
 	@FindBy(xpath = "//div[@class='ms-Suggestions-container suggestionsContainer_d6f75437']//div//span//div[@class='container-228']//div[@class = 'personaText-231']//span[@class = 'gdHcIp0K_u5Oq4AhHfyK1 _1z9_llUB_9llYO_-6aedlB']")
@@ -26,7 +26,7 @@ public class CalendarPage {
 		PageFactory.initElements(TestBase.driver, this);
 	}
 
-  public void create_an_event() {
+  public void create_an_event() throws InterruptedException {
 	  addTitle.sendKeys("Flight");
 	  searchLocation.click();
 	  searchLocation.sendKeys("Chennai");
@@ -40,7 +40,9 @@ public class CalendarPage {
       		break;
       	}
       }	  
+	
 	  savebtn.click();
+	  Thread.sleep(1000);
 	}
   
   

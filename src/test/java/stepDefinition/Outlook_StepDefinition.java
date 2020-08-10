@@ -34,15 +34,14 @@ public class Outlook_StepDefinition extends TestBase{
 	@Given("^User navigate to the login page$")
 	public void user_navigate_to_Login_Page() {
 		TestBase.initialization();
-		System.out.println(driver);
-		System.out.println("1");
+		
 	}
 	
 	@When("^User submit emailId and password$")
 	public void User_submit_emailId_and_password() throws InterruptedException {
 		loginPage = new OutlookLoginPage();	
 		homepage =loginPage.loginValidation(prop.getProperty("email"),prop.getProperty("password"));
-		System.out.println("2");
+		
 	}
 		
 	@Then("^User should be logged in$")
@@ -50,17 +49,17 @@ public class Outlook_StepDefinition extends TestBase{
 		String title = driver.getTitle();
 		System.out.println(title);
 		//Assert.assertEquals("Mail - Maneesha Kumar - Outlook", title);
-		System.out.println("3");
+		
 	}
 	
 	@When("^The User click Calendar button$")
 	public void click_calendar_button() {
 		homepage.calendarbtnClick();
-		System.out.println("4");
+		
 	}
 	
 	@Then("^User Creates an Event$")
-	public void user_creates_an_event() {
+	public void user_creates_an_event() throws InterruptedException {
 		calendarpage = new CalendarPage();
 		calendarpage.create_an_event();
 		System.out.println("5");
@@ -69,21 +68,21 @@ public class Outlook_StepDefinition extends TestBase{
 	@When("^The User click email button$")
 	public void click_email_button() {
 		homepage.emailbtnClick();
-		System.out.println("6");
+		
 	}
 	
 	@Then("^User compose an email$")
-	public void user_compose_an_email() {
+	public void user_compose_an_email() throws InterruptedException {
 		emailComposePage = new EmailComposePage();
 		emailComposePage.compose_a_mail();
-		System.out.println("7");
+		
 	}
 
 	
 	@When("^The User click Contact button$")
 	public void click_contact_button() {
 		homepage.peoplebtnClick();
-		System.out.println("8");
+		
 	}
 	
 	@Then("^User creates a contact$")
@@ -91,6 +90,6 @@ public class Outlook_StepDefinition extends TestBase{
 		List<Map<String,String>> data = usercredentials.asMaps(String.class,String.class);
 		contactpage = new ContactPage();
 		contactpage.createContact(data);
-		System.out.println("9");
+		
 	}
 }
